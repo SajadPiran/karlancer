@@ -1,12 +1,12 @@
 <svg width="766" height="183" viewBox="0 0 766 283" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d_2059_6)">
-<rect x="-183" y="127.115" width="394.231" height="394.231" transform="rotate(-30 -183 227.115)" fill="url(#pattern0_2059_6)"/>
+<rect x="-183" y="127.115" width="450.231" height="450.231" transform="rotate(-30 -183 227.115)" fill="url(#pattern0_2059_6)"/>
 </g>
 <g filter="url(#filter1_d_2059_6)">
-<rect width="394.231" height="394.231" transform="matrix(-0.866025 -.75 -0.5 0.866025 949.529 227.115)" fill="url(#pattern1_2059_6)"/>
+<rect width="450.231" height="450.231" transform="matrix(-0.866025 -.75 -0.5 0.866025 949.529 227.115)" fill="url(#pattern1_2059_6)"/>
 </g>
 <g filter="url(#filter2_d_2059_6)">
-<rect x="280" y="78" width="205" height="205" fill="url(#pattern2_2059_6)"/>
+<rect x="240" y="70" width="230" height="230" fill="url(#pattern2_2059_6)"/>
 </g>
 <defs>
 <filter id="filter0_d_2059_6" x="-249.8" y="-36.8" width="672.129" height="672.129" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
