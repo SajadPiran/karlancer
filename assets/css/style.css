@@ -1175,6 +1175,11 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
+  .min-\[1200px\]\:mx-auto {
+    @media (width >= 1200px) {
+      margin-inline: auto;
+    }
+  }
   .min-\[1200px\]\:max-w-\[1200px\] {
     @media (width >= 1200px) {
       max-width: 1200px;
@@ -1194,6 +1199,11 @@
     @media (width >= 1536px) {
       --tw-translate-x: 20%;
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .min-\[2000px\]\:items-center {
+    @media (width >= 2000px) {
+      align-items: center;
     }
   }
   .sm\:col-span-1 {
