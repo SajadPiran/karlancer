@@ -188,7 +188,7 @@
         </section>
     </aside>
     <section class="w-full bg-black/50 h-screen fixed top-0 z-[999] backdrop-blur-[6px] -right-full" data-role="sidebar" id="basket">
-        <section data-role="sidebarSection" class="w-[calc(100%-50px)] max-w-[500px] h-[calc(100%-100px)] flex flex-col bg-primary absolute top-1/2 -right-full translate-y-[-50%] max-md:translate-x-[50%]  py-6 px-8 rounded-[50px] overflow-hidden">
+        <section data-role="sidebarSection" class="w-[calc(100%-50px)] max-w-[500px] h-[calc(100%-100px)] flex flex-col bg-primary absolute top-1/2 -right-full  md:right-8 translate-y-[-50%] max-md:translate-x-[50%]  py-6 px-8 rounded-[50px] overflow-hidden">
             <header class="w-full flex justify-between">
                 <div class="flex gap-2 border border-white/8 rounded-2xl py-1 px-2">
                     <img src="assets/images/Rectangle%2011.png" alt="" class="min-w-6 max-w-6 min-h-6 max-h-6 rounded-[50%] overflow-hidden">
@@ -360,7 +360,7 @@
     <main class="flex flex-col items-center gap-20 py-16">
         <section class="container">
             <div class="flex flex-col md:flex-row gap-6 padding-x">
-                <div data-aos="fade-left" class="w-full max-w-[600px] flex flex-col gap-4">
+                <div data-aos="fade-left" class="w-full max-w-[600px] flex flex-col gap-4 relative">
                     <div class="flex flex-col gap-2">
                         <span class="text-white font-semibold text-[calc(18px+.5vw)]">Gardener Job</span>
                         <div class="flex gap-1">
@@ -369,11 +369,11 @@
                             <span class="py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">Qb-Core</span>
                         </div>
                     </div>
-                    <img src="assets/images/Rectangle%2090.png" class="w-full max-h-[300px] rounded-xl" alt="">
-                    <div class="w-full flex items-center justify-between">
+                    <img src="assets/images/Rectangle%2090.png" class="w-full md:min-w-[300px] lg:min-w-[400px] max-h-[300px] rounded-xl" alt="">
+                    <div class="w-full flex items-center justify-between ">
                         <span class="py-2 px-3 text-sm bg-white/5 text-white/60 rounded-2xl font-semibold">$159.99</span>
                         <div class="flex items-center gap-4">
-                            <button type="button" class="w-12 h-12 flex justify-center items-center border border-white/10 rounded-[50%]">
+                            <button type="button" class="gift w-12 h-12 flex justify-center items-center border border-white/10 rounded-[50%] cursor-pointer">
                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8333 13.5413V18.7497C20.8333 19.5785 20.5041 20.3733 19.918 20.9594C19.332 21.5454 18.5371 21.8747 17.7083 21.8747H13.5417V13.5413H20.8333ZM11.4583 13.5413V21.8747H7.29167C6.46287 21.8747 5.66801 21.5454 5.08196 20.9594C4.49591 20.3733 4.16667 19.5785 4.16667 18.7497V13.5413H11.4583ZM9.375 2.08301C9.96613 2.08298 10.5505 2.20872 11.0893 2.4519C11.6281 2.69507 12.109 3.05011 12.5 3.49342C12.891 3.05011 13.3719 2.69507 13.9107 2.4519C14.4495 2.20872 15.0339 2.08298 15.625 2.08301H16.1458C16.5602 2.08301 16.9577 2.24763 17.2507 2.54065C17.5437 2.83368 17.7083 3.23111 17.7083 3.64551V4.16634C17.7083 4.92572 17.5052 5.63717 17.151 6.24967H19.7917C20.3442 6.24967 20.8741 6.46917 21.2648 6.85987C21.6555 7.25057 21.875 7.78047 21.875 8.33301V10.4163C21.875 10.7955 21.774 11.1518 21.5958 11.458H13.5417V8.33301C13.5417 8.05674 13.4319 7.79179 13.2366 7.59644C13.0412 7.40109 12.7763 7.29134 12.5 7.29134C12.2237 7.29134 11.9588 7.40109 11.7634 7.59644C11.5681 7.79179 11.4583 8.05674 11.4583 8.33301V11.458H3.40417C3.2213 11.1413 3.12502 10.782 3.125 10.4163V8.33301C3.125 7.78047 3.34449 7.25057 3.73519 6.85987C4.12589 6.46917 4.6558 6.24967 5.20833 6.24967H7.84896C7.48358 5.61617 7.29138 4.89766 7.29167 4.16634V3.64551C7.29167 3.23111 7.45629 2.83368 7.74931 2.54065C8.04234 2.24763 8.43977 2.08301 8.85417 2.08301H9.375ZM9.375 4.16634C9.375 4.71888 9.59449 5.24878 9.98519 5.63948C10.3759 6.03018 10.9058 6.24967 11.4583 6.24967C11.4583 5.69714 11.2388 5.16724 10.8481 4.77654C10.4574 4.38583 9.92753 4.16634 9.375 4.16634ZM15.625 4.16634C15.0725 4.16634 14.5426 4.38583 14.1519 4.77654C13.7612 5.16724 13.5417 5.69714 13.5417 6.24967C14.0942 6.24967 14.6241 6.03018 15.0148 5.63948C15.4055 5.24878 15.625 4.71888 15.625 4.16634Z" fill="white" fill-opacity="0.4"/>
                                 </svg>
@@ -381,8 +381,13 @@
                             <button type="button" class="py-2.5 px-8 text-sm font-medium bg-linear-to-l from-[#955DC4] from-0% to-[#4F306B] to-100% text-white rounded-4xl cursor-pointer">+ Add To Cart</button>
                         </div>
                     </div>
+                    <div class="flex gap-4 absolute right-0 bg-white/10 p-2 rounded-2xl z-[999] gift-section opacity-0 pointer-events-none transition-all duration-200 ">
+                        <button type="button" class="py-2.5 px-8 text-sm font-medium bg-linear-to-l from-[#955DC4] from-0% to-[#4F306B] to-100% text-white rounded-4xl cursor-pointer">Gift</button>
+                        <input type="text" placeholder="username" class="w-40  text-white/60 placeholder:text-white/60 border-none outline-none p-1">
+                    </div>
+
                 </div>
-                <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-4 z-[1]">
                     <header data-aos="fade-up">
                         <span class=" text-secondary font-medium">Our Featured</span>
                         <p class="text-xs text-white/70 tracking-tighter">Lorem ipsum dolor sit amet</p>
@@ -451,150 +456,6 @@
                                 <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2  p-4 rounded-2xl swiper-slide cart">
-                            <img src="assets/images/Rectangle%2090.png" class="w-full rounded-xl" alt="">
-                            <span class="text-lg text-white font-medium">6 Vehicles Bundle</span>
-                            <div class="flex gap-1">
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Escrow</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Open Source</span>
-                                <span class="py-1 px-2 text-xs bg-white/10 text-white/40 rounded-2xl">Qb-Core</span>
-                            </div>
-                            <div class="w-full flex justify-between mt-12">
-                                <span class="py-2 px-3 text-sm bg-white/4 text-white/60 rounded-2xl font-semibold">$159.99</span>
-                                <button type="button" class="py-2 px-3 text-sm bg-secondary/8 text-secondary rounded-2xl cursor-pointer">+ Add To Basket</button>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
