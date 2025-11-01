@@ -157,14 +157,19 @@
         transition: opacity 500ms ease-in-out;
         opacity: 1 !important;
     }
-    #basket [data-role="content"]{
+    #basket [data-role="content"] , #basket #checkout{
         background: linear-gradient(0deg, #121212, #121212),
         radial-gradient(476.33% 141.53% at 100% 0%, rgba(115, 115, 115, 0.0357) 0%, rgba(165, 165, 165, 0) 100%)
     }
 
     #basket .section-content--active{
+        pointer-events: auto !important;
         transition: right 300ms 200ms ease-in-out;
         right: 50% !important;
+        @media (min-width: 768px) {
+            right: 5% !important;
+
+        }
     }
 
 

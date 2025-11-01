@@ -197,7 +197,7 @@
                         </ul>
 
                         <!-- User -->
-                        <div class="hidden gap-2">
+                        <div class="flex gap-2">
                             <div class="min-w-8 min-h-8 max-w-8 max-h-8 flex justify-center items-center rounded-[50%] overflow-hidden">
                                 <img src="https://forum.cfx.re/user_avatar/forum.cfx.re/{{ basket.ign }}/288/4972969_2.png" class="w-full h-full">
                             </div>
@@ -224,7 +224,7 @@
         </header>
 
         <!--Sidebar-->
-        <aside class="w-full bg-black/50 h-screen fixed top-0 right-full" data-role="section" id="sidebar">
+        <aside class="w-full bg-black/50 h-screen fixed top-0 right-full backdrop-blur-[20px]" data-role="section" id="sidebar">
 
             <section data-role="content" class="w-[60%] h-full flex flex-col bg-black absolute top-0 -left-full">
                 <ul class="w-full flex flex-col gap-6 py-10 px-6">
@@ -240,9 +240,153 @@
 
         <!--Basket-->
         <section class="w-full h-screen flex justify-center items-center fixed inset-0 bg-black/50 z-[999] backdrop-blur-[20px] opacity-0 transition-opacity pointer-events-none" data-role="section" id="basket">
-            <section data-role="content" class="w-[calc(100%-50px)] max-w-[500px] h-[calc(100%-100px)] flex flex-col justify-center items-center absolute top-1/2 -right-full md:right-8 translate-y-[-50%] max-md:translate-x-[50%]  py-6 px-8 rounded-[50px] overflow-hidden">
-                <div class="loading-spinner"></div>
+
+            <section data-role="content" class="w-[calc(100%-50px)] max-w-[500px] h-[calc(100%-100px)] flex flex-col justify-center md:justify-start items-center gap-6 absolute top-1/2 -right-full translate-y-[-50%] max-md:translate-x-[50%]  py-6 px-8 rounded-[50px] overflow-hidden">
+
+                <header class="w-full flex justify-between">
+                    <div class="flex gap-2 border border-white/8 rounded-2xl py-1 px-2">
+                        <img src="assets/images/Rectangle%2011.png" alt="" class="min-w-6 max-w-6 min-h-6 max-h-6 rounded-[50%] overflow-hidden">
+                        <span class="text-sm font-medium text-white/60">username</span>
+                    </div>
+                    <button type="button" data-role="closeSidebar" class="text-white/20 text-3xl cursor-pointer font-semibold">X</button>
+
+                </header>
+
+                <!--Items-->
+                <div class="w-full h-[calc(100%-160px)] md:h-[calc(100%-250px)] flex flex-wrap gap-4 overflow-y-scroll">
+                    <div class="w-full h-fit flex flex-shrink-0 items-center gap-4 bg-white/5 p-4 rounded-[20px] overflow-hidden">
+
+                        <img src="assets/images/a67081fcaa16351b47eecb08a385edbf80153068.png" class="w-20 h-20 rounded-xl" alt="">
+                        <div class="w-[calc(100%-100px)] flex flex-col gap-2 ">
+                            <a class="w-full text-white font-semibold  whitespace-nowrap overflow-hidden text-ellipsis" href="">FREE CHARACTER CREATOR</a>
+                            <ul class="w-full flex flex-wrap gap-1">
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qb</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">esx</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qbox</li>
+                            </ul>
+                            <div class="w-full flex justify-between">
+                                <span class="w-fit py-2 px-3 text-sm bg-white/5 text-white/60 rounded-2xl font-semibold">€15.85</span>
+
+                                <a href="" class="cursor-pointer">
+                                    <svg class="w-8 h-8"><use href="#trash"></use></svg>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="w-full h-fit flex flex-shrink-0 items-center gap-4 bg-white/5 p-4 rounded-[20px] overflow-hidden">
+
+                        <img src="assets/images/a67081fcaa16351b47eecb08a385edbf80153068.png" class="w-20 h-20 rounded-xl" alt="">
+                        <div class="w-[calc(100%-100px)] flex flex-col gap-2 ">
+                            <a class="w-full text-white font-semibold  whitespace-nowrap overflow-hidden text-ellipsis" href="">FREE CHARACTER CREATOR</a>
+                            <ul class="w-full flex flex-wrap gap-1">
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qb</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">esx</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qbox</li>
+                            </ul>
+                            <div class="w-full flex justify-between">
+                                <span class="w-fit py-2 px-3 text-sm bg-white/5 text-white/60 rounded-2xl font-semibold">€15.85</span>
+
+                                <a href="" class="cursor-pointer">
+                                    <svg class="w-8 h-8"><use href="#trash"></use></svg>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="w-full h-fit flex flex-shrink-0 items-center gap-4 bg-white/5 p-4 rounded-[20px] overflow-hidden">
+
+                        <img src="assets/images/a67081fcaa16351b47eecb08a385edbf80153068.png" class="w-20 h-20 rounded-xl" alt="">
+                        <div class="w-[calc(100%-100px)] flex flex-col gap-2 ">
+                            <a class="w-full text-white font-semibold  whitespace-nowrap overflow-hidden text-ellipsis" href="">FREE CHARACTER CREATOR</a>
+                            <ul class="w-full flex flex-wrap gap-1">
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qb</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">esx</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qbox</li>
+                            </ul>
+                            <div class="w-full flex justify-between">
+                                <span class="w-fit py-2 px-3 text-sm bg-white/5 text-white/60 rounded-2xl font-semibold">€15.85</span>
+
+                                <a href="" class="cursor-pointer">
+                                    <svg class="w-8 h-8"><use href="#trash"></use></svg>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="w-full h-fit flex flex-shrink-0 items-center gap-4 bg-white/5 p-4 rounded-[20px] overflow-hidden">
+
+                        <img src="assets/images/a67081fcaa16351b47eecb08a385edbf80153068.png" class="w-20 h-20 rounded-xl" alt="">
+                        <div class="w-[calc(100%-100px)] flex flex-col gap-2 ">
+                            <a class="w-full text-white font-semibold  whitespace-nowrap overflow-hidden text-ellipsis" href="">FREE CHARACTER CREATOR</a>
+                            <ul class="w-full flex flex-wrap gap-1">
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qb</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">esx</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qbox</li>
+                            </ul>
+                            <div class="w-full flex justify-between">
+                                <span class="w-fit py-2 px-3 text-sm bg-white/5 text-white/60 rounded-2xl font-semibold">€15.85</span>
+
+                                <a href="" class="cursor-pointer">
+                                    <svg class="w-8 h-8"><use href="#trash"></use></svg>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="w-full h-fit flex flex-shrink-0 items-center gap-4 bg-white/5 p-4 rounded-[20px] overflow-hidden">
+
+                        <img src="assets/images/a67081fcaa16351b47eecb08a385edbf80153068.png" class="w-20 h-20 rounded-xl" alt="">
+                        <div class="w-[calc(100%-100px)] flex flex-col gap-2 ">
+                            <a class="w-full text-white font-semibold  whitespace-nowrap overflow-hidden text-ellipsis" href="">FREE CHARACTER CREATOR</a>
+                            <ul class="w-full flex flex-wrap gap-1">
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qb</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">esx</li>
+                                <li class="h-fit flex-shrink-0 py-1 px-2 text-xs bg-white/15 text-white/40 rounded-2xl">qbox</li>
+                            </ul>
+                            <div class="w-full flex justify-between">
+                                <span class="w-fit py-2 px-3 text-sm bg-white/5 text-white/60 rounded-2xl font-semibold">€15.85</span>
+
+                                <a href="" class="cursor-pointer">
+                                    <svg class="w-8 h-8"><use href="#trash"></use></svg>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Checkout-->
+                <div class="w-full h-52 flex flex-col gap-4 absolute bottom-0 right-0 z-[90]  py-4 px-8" id="checkout">
+                    <div class="w-full flex justify-between">
+
+                        <div class="flex flex-col gap-4">
+                            <span class="text-white/70 text-[calc(12px+.25vw)]">Total Products</span>
+                            <div class="w-9 h-9 flex justify-center items-center border border-white/7 rounded-[50%] text-white">8</div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <span class="text-white/70 text-[calc(12px+.25vw)]">Sub Total</span>
+                            <div class="w-fit flex justify-center items-center border border-white/7 rounded-[150px] text-white py-1 px-2">$159.99</div>
+                        </div>
+
+                    </div>
+                    <div class="w-full pt-4 border-t border-t-white/10">
+                        <button type="button" class="checkout w-full flex justify-center items-center gap-2 py-3 rounded-[60px] bg-linear-to-r from-[#955DC4] from-0% to-[#4F306B] to-100% relative cursor-pointer">
+                            <svg class="w-7 h-7 fill-white"><use href="#basket"></use></svg>
+                            <span class="font-medium text-white">Checkout</span>
+                            <svg class="w-7 h-7 bg-linear-to-t from-[#65487E] from-0% to-[#AE63ED] to-100% rounded-[50%] fill-white rotate-90 absolute right-3"><use href="#arrow"></use></svg>
+                        </button>
+                    </div>
+                </div>
+
+
             </section>
+
         </section>
 
         <!--Sidebar Button-->

@@ -35,11 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const sidebarSection = sidebar.querySelector('[data-role="content"]');
             const closeButton = sidebar.querySelector('[data-role="closeSidebar"]');
 
+            document.body.classList.toggle('overflow-hidden');
             sidebar.classList.toggle('section--active');
             sidebarSection.classList.toggle('section-content--active');
             closeButton?.addEventListener('click', (e) => {
+                document.body.classList.toggle('overflow-hidden');
                 sidebar.classList.remove('section--active');
-                sidebarSection.classList.remove('sidebar-content--active');
+                sidebarSection.classList.remove('section-content--active');
             } , {once: true});
         }
 
